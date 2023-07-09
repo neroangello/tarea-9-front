@@ -1,0 +1,8 @@
+/* Elementos del bloque nav */
+$nav-color-fondo: #197ABE;
+$nav-color-texto: white;
+
+.nav-custom{
+    background-color: $nav-color-fondo;
+    color: $nav-color-texto;
+}

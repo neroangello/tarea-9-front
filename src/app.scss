@@ -1,0 +1,7 @@
+/* Layout base del proyecto */
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: calc(100vh - 16px);
+}
