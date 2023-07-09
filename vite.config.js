@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/tarea-9-front-end/',
+  base: 'https://neroangello.github.io/tarea-9-front-end/',
 })
