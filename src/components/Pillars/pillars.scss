@@ -1,0 +1,64 @@
+/* Bloque pilares */
+$pilar-color-fondo: #02243D;
+$pilar-color-texto: white;
+$pilar-color-borde: white;
+
+/* Estructura general del diseño */
+
+.layout__pilares {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: $pilar-color-fondo;
+    padding-top: 3em;
+    padding-bottom: 3em;
+
+}
+
+.pilar{
+    text-align: center;    
+    color: $pilar-color-texto;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.svg-pilar{
+    width: 2em;
+    height: 2em;
+}
+
+.pilar:nth-child(1), .pilar:nth-child(2), .pilar:nth-child(3){
+    border-right: 1px solid $pilar-color-borde;
+}
+
+
+
+/* Caso: vistas con largo maximo de 768px */
+
+@media screen and (max-width: 768px) {
+
+    .layout__pilares {
+        display: grid;
+        grid-template-columns: auto ;
+        background-color: $pilar-color-fondo;
+        padding-top: 4em;
+        padding-bottom: 4em;
+    }
+
+}
+
+/* Caso: vistas con largo maximo de 768px */
+
+@media screen and (max-width: 768px) {
+
+    .pilar:nth-child(1), .pilar:nth-child(2), .pilar:nth-child(3){
+        border-right: none;
+    }
+
+    .pilar{
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+}
